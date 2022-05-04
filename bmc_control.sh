@@ -10,12 +10,6 @@ __license__="MIT"
 # Uses Supermicro IPMI BMC Shell to send commands
 # Right now only power clycle commands are implemented
 
-__author__="Aaron Castro"
-__author_email__="aaron.castro.sanchez@outlook.com"
-__copyright__="Aaron Castro"
-__license__="MIT"
-
-
 usage() {
     echo "Usage: $0 [-p <up|down>] [-h <ip address | hostname>]" 1>&2
     exit 0
