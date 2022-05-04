@@ -1,5 +1,6 @@
 ## shell-scripts
 
+- bmc_control.sh            -> Shell power control for SuperMicro IPMI
 - certificate_wizard.sh     -> Creates a fully functional Self-Signed CA
 - colors.sh                 -> Colorize scripts. Source this file
 - cpu_usage.sh              -> Real time CPU usage
@@ -8,7 +9,7 @@
 - isip.sh                   -> Check if it is an IP. Source this file
 - lamp_install.sh           -> Install LAMP on a Debian system
 - notify_send_all.sh        -> Send global desktop notifications
-- pf_install.sh       -> Install and configure basic PF
+- pf_install.sh             -> Install and configure basic PF
 - ping.sh                   -> Ping script with altered output
 - port_scan.sh              -> Check if a TCP port is open. Bashih /dev/tcp/...
 - progressbar.sh            -> Downloadable ready shell progress bar
