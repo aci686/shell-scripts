@@ -1,5 +1,6 @@
 ## shell-scripts
 
+- certificate_wizard.sh -> Creates a fully functional Self-Signed CA
 - colors.sh             -> Colorize scripts. Source this file
 - cpu_usage.sh          -> Real time CPU usage
 - famp_install.sh       -> Install LAMP on a FreeBSD system
