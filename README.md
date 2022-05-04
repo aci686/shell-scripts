@@ -1,5 +1,6 @@
 ## shell-scripts
 
+- back_me_up.sh             -> Backs up $HOME to //$DESTINATION/$(whoami)/ CIFS drive
 - bmc_control.sh            -> Shell power control for SuperMicro IPMI
 - certificate_wizard.sh     -> Creates a fully functional Self-Signed CA
 - colors.sh                 -> Colorize scripts. Source this file
