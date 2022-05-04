@@ -11,7 +11,6 @@ __license__="MIT"
 # Usage:
 # echo "This is color ${green}green${end} and this is color ${red}red${end}. Looking nice?"
 
-
 green="\e[0;32m\033[1m"
 red="\e[0;31m\033[1m"
 blue="\e[0;34m\033[1m"
