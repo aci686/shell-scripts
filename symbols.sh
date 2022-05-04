@@ -17,7 +17,6 @@ __license__="MIT"
 # echo -e "[${missing_in_box}]"
 # echo -e "[${empty_box}]"
 
-
 check1="\u2713"
 check2="\u2714"
 missing1="\u2717"
