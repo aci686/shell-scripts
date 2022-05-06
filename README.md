@@ -17,6 +17,7 @@
 - progressbar.sh            -> Downloadable ready shell progress bar
 - progress_bar.sh           -> Command line progress bar
 - service_health_check.sh   -> Check service status in multiple systems
+- spinner.sh                -> Spinner progress indicator. Source this file
 - symbols.sh                -> Glyph scripts. Source this file
 - update_issue_linux.sh     -> Updates /etc/issue message adding system confifgured IP addresses in Linux
 - update_issue_fbsd.sh      -> Updates /etc/issue message adding system confifgured IP addresses in FreeBSD
