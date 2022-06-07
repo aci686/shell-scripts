@@ -1,6 +1,5 @@
 ## shell-scripts
 
-- back_home_up.sh           -> Backs up $HOME to /media/usb0 USB HDD
 - back_me_up.sh             -> Backs up $HOME to //$DESTINATION/$(whoami)/ CIFS drive
 - bmc_control.sh            -> Shell power control for SuperMicro IPMI
 - certificate_wizard.sh     -> Creates a fully functional Self-Signed CA
