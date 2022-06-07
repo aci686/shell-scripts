@@ -20,4 +20,3 @@ purple="\e[0;35m\033[1m"
 turquoise="\e[0;36m\033[1m"
 gray="\e[0;37m\033[1m"
 end="\033[0m\e0"
-

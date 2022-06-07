@@ -4,6 +4,7 @@
 
 __author__="Aaron Castro"
 __author_email__="aaron.castro.sanchez@outlook.com"
+__author_nick__="i686"
 __copyright__="Aaron Castro"
 __license__="MIT"
 
@@ -52,4 +53,3 @@ esac
         printf "%s\b" "${sp:i++%n:1}"
     done
 }
-
