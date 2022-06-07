@@ -4,16 +4,12 @@
 
 __author__="Aaron Castro"
 __author_email__="aaron.castro.sanchez@outlook.com"
+__author_nick__="i686"
 __copyright__="Aaron Castro"
 __license__="MIT"
 
 # Uses OpenSSL libraries to manage CA certificates
 # Right now only new certs issuing
-
-__author__="Aaron Castro"
-__author_email__="aaron.castro.sanchez@outlook.com"
-__copyright__="Aaron Castro"
-__license__="MIT"
 
 # Fill the following variables with your data. It must match your own CA
 CA_DIR=''
@@ -168,4 +164,3 @@ echo "[i] Certificate package export..."
 openssl req -in $CA_DIR/csr/$1.csr.pem -noout -pubkey > $HOME/$1.key
 cp $CA_DIR/certs/$1.cert.pem $HOME
 cp $CA_DIR/private/$1.key.pem $HOME
-
