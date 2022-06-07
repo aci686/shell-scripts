@@ -4,6 +4,7 @@
 
 __author__="Aaron Castro"
 __author_email__="aaron.castro.sanchez@outlook.com"
+__author_nick__="i686"
 __copyright__="Aaron Castro"
 __license__="MIT"
 
@@ -28,7 +29,7 @@ echo '[i] Checking destination mountpoint...'
 mount | grep $DESTINATION &> /dev/null
 if [ $? == 0 ]; then
     echo '[!] Already mounted...'
-    t_mtp=$(mount | grep 'rs1219' | awk '{print $3}')
+    t_mtp=$(mount | grep $DESTINATION | awk '{print $3}')
     echo '[i] Reusing '$t_mtp'...'
 else
     echo '[i] Creating temp mountpoint...'
@@ -38,7 +39,7 @@ else
     sudo mount -t cifs //$DESTINATION/$(whoami)/ $t_mtp -o username=$(whoami),uid=$(id -u),gid=$(id -g)
 fi
 echo '[i] Starting sync...'
-rsync -aXv --omit-dir-times --delete-during --ignore-errors $HOME/ $t_mtp --progress
+rsync -aXv --omit-dir-times --backup-dir=versions --suffix="."$(date +"%d-%m-%Y") --ignore-errors --info=ALL --log-file=backup.$(date +"%d-%m-%Y").log --progress $HOME/ --exclude={".cache"} $t_mtp
 echo '[OK] Sync complete!'
 echo '[i] Unmounting...'
 sudo umount $t_mtp
