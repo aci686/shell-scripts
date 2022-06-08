@@ -17,11 +17,11 @@ usage() {
 }
 
 powerup() {
-    echo "start /system1/pwrmgtsvc1" | ssh -T root@$1
+    echo "start /system1/pwrmgtsvc1" | ssh -T admin@$1
 }
 
 powerdown() {
-    echo "stop /system1/pwrmgtsvc1" | ssh -T root@$1
+    echo "stop /system1/pwrmgtsvc1" | ssh -T admin@$1
 }
 
 while getopts "p:i:" option; do
